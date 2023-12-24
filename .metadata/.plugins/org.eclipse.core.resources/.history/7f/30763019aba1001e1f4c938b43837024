@@ -1,0 +1,8 @@
+package ar.com.sistema.secundario.exceptions;
+
+public class EntityNotExistsException extends Exception{
+	public EntityNotExistsException() {
+		super("THE ENTITY NOT EXISTS");
+	}
+}
+}

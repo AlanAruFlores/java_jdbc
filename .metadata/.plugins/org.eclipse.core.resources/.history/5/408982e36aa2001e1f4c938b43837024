@@ -1,0 +1,6 @@
+package ar.com.sistema.secundario.dao;
+
+import ar.com.sistema.secundario.modelo.Nota;
+
+public interface NotaDAO extends DAO<Nota>{
+}

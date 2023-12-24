@@ -1,0 +1,54 @@
+package ar.com.sistema.secundario.dao.impl;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.util.Properties;
+
+import ar.com.sistema.secundario.dao.AlumnoMateriaDAO;
+import ar.com.sistema.secundario.dao.DAOManager;
+
+public class DAOManagerImpl implements DAOManager {
+	private Connection conn;
+	private final String URL_CONNECTION = "jdbc:mysql://127.0.0.1/sistema_secundario";
+	
+	
+	
+	public DAOManagerImpl() {
+		Properties prop = new Properties();
+		prop.setProperty("user", "root");
+		prop.setProperty("password", "");
+		this.conn = DriverManager.getConnection(URL_CONNECTION)
+	}
+	
+	
+	@Override
+	public AlumnoDAOImpl getAlumnoDAO() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public AlumnoMateriaDAO getAlumnoMateriaDAO() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public NotaDAOImpl getNotaDAOImpl() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public MateriaDAOImpl getMateriaDAOImpl() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ProfesorDAOImpl getProfesorDAOImpl() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

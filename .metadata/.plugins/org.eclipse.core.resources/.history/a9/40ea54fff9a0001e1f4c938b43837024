@@ -1,0 +1,8 @@
+package ar.com.sistema.secundario.dao;
+import java.util.List;
+
+public interface DAO<T>{
+	public Boolean insertRow(T object);
+	public List<T> getAllRows();
+	
+}

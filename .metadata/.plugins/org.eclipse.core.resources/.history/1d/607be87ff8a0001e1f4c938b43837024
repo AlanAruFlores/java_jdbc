@@ -1,0 +1,7 @@
+package ar.com.sistema.secundario.dominio;
+
+public class Profesor {
+	private Integer dni;
+	private String nombre;
+	private String apellido;
+}

@@ -1,0 +1,40 @@
+package ar.com.sistema.secundario.dao.mysql;
+
+import java.util.List;
+
+import ar.com.sistema.secundario.dao.AlumnoDAO;
+import ar.com.sistema.secundario.modelo.Alumno;
+
+public final class AlumnoDAOImpl implements AlumnoDAO{
+
+	@Override
+	public Boolean insertRow(Alumno object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Alumno> getAllRows() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Alumno getRowSpecificById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean updateRowById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean deleteRowById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,38 @@
+package ar.com.sistema.secundario.dao.impl;
+
+import ar.com.sistema.secundario.dao.AlumnoMateriaDAO;
+import ar.com.sistema.secundario.dao.DAOManager;
+
+public class DAOManagerImpl implements DAOManager {
+
+	@Override
+	public AlumnoDAOImpl getAlumnoDAO() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public AlumnoMateriaDAO getAlumnoMateriaDAO() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public NotaDAOImpl getNotaDAOImpl() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public MateriaDAOImpl getMateriaDAOImpl() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ProfesorDAOImpl getProfesorDAOImpl() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

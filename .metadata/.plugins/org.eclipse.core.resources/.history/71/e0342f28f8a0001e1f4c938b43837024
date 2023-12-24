@@ -1,0 +1,11 @@
+package ar.com.sistema.secundario.modelo;
+
+public class Alumno {
+	Integer dni;
+	String nombre;
+	String apellido;
+	Integer edad;
+	String nivel;
+	
+	
+}

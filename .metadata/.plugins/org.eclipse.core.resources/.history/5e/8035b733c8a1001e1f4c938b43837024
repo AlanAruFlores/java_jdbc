@@ -1,0 +1,70 @@
+package ar.com.sistema.secundario.dao.impl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import ar.com.sistema.secundario.dao.MateriaDAO;
+import ar.com.sistema.secundario.modelo.Materia;
+
+public final class MateriaDAOImpl implements MateriaDAO{
+
+	private Connection conn;
+	
+	public MateriaDAOImpl (Connection conn) {
+		this.conn  = conn;
+	}
+	
+	@Override
+	public Boolean insertRow(Materia object) {
+		String query ="INSERT INTO materia (cod_mat, nombre, dni_pr) VALUES (?,?,?)";
+		try(PreparedStatement ps = conn.prepareStatement(query)){
+			ps.setInt(1,object.getCodMateria());
+			ps.setString(2, object.getNombre());
+			ps.setInt(3, object.getDniProfesor());
+			
+			ps.executeUpdate();
+			
+			ps.close();
+		}catch(SQLException ex) {
+			ex.printStackTrace();
+		}
+		
+		return true;
+	}
+
+	@Override
+	public List<Materia> getAllRows() {
+		List<Materia> listSubjects = new ArrayList<>();
+		String query = "SELECT * FROM materia";
+		
+		try(PreparedStatement ps = conn.prepareStatement(query)){
+			
+		}catch(SQLException ex) {
+			ex.printStackTrace();
+		}
+		
+		return null;
+	}
+
+	@Override
+	public Materia getRowSpecificById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean updateRowById( Materia object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean deleteRowById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

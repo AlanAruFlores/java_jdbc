@@ -1,0 +1,7 @@
+package ar.com.sistema.secundario.dao.impl;
+
+import ar.com.sistema.secundario.dao.ProfesorDAO;
+
+public class ProfesroDAOImpl implements ProfesorDAO {
+
+}

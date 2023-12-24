@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestAlumnoDAOImpl" project="JDBC_Sistema_Secundario" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="ar.com.sistema.secundario.test.TestAlumnoDAOImpl" time="0.412">
+    <testcase name="testThatAllowMeToDeleteAStudent" classname="ar.com.sistema.secundario.test.TestAlumnoDAOImpl" time="0.29"/>
+    <testcase name="testWeCanInsertARow" classname="ar.com.sistema.secundario.test.TestAlumnoDAOImpl" time="0.031"/>
+    <testcase name="testAllowMeToGetAStudentByDNI" classname="ar.com.sistema.secundario.test.TestAlumnoDAOImpl" time="0.083"/>
+    <testcase name="testThatAllowShowMeAllStudents" classname="ar.com.sistema.secundario.test.TestAlumnoDAOImpl" time="0.008"/>
+  </testsuite>
+</testrun>

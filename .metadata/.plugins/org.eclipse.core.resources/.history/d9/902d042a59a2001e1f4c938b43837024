@@ -1,0 +1,81 @@
+package ar.com.sistema.secundario.dao.impl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import ar.com.sistema.secundario.dao.AlumnoMateriaDAO;
+import ar.com.sistema.secundario.exceptions.EntityNotExistsException;
+import ar.com.sistema.secundario.modelo.AlumnoMateria;
+
+public final class AlumnoMateriaDAOImpl implements AlumnoMateriaDAO{
+	private Connection conn;
+	
+	public AlumnoMateriaDAOImpl (Connection conn) {
+		this.conn  = conn;
+	}
+	
+	
+	public Boolean insertRow(AlumnoMateria object) {
+		String query = "INSERT INTO alumno_materia (dni_al, cod_mat) VALUES (?,?)";
+		try(PreparedStatement ps = conn.prepareStatement(query)){
+			ps.setInt(1, object.getDniAlumno());
+			ps.setInt(2, object.getCodMateria());
+			
+			ps.executeUpdate();
+			ps.close();
+		}catch(SQLException ex) {
+			ex.printStackTrace();
+		}
+		return true;
+	}
+
+	public List<AlumnoMateria> getAllRows() {
+		List<AlumnoMateria> listStudentsSubjects = new ArrayList<>();
+		String query = "SELECT * FROM alumno_materia";
+		
+		try(PreparedStatement ps = conn.prepareStatement(query)){
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				listStudentsSubjects.add(new AlumnoMateria(rs.getInt(1),rs.getInt(2)));
+			}
+			
+			rs.close();
+			ps.close();
+		}catch(SQLException ex) {
+			ex.printStackTrace();
+		}
+		
+		return listStudentsSubjects;
+	}
+
+	//SELECT MULTITABLAS
+	public String showSubjectsByStudentId(Integer id) {
+		String txt = "";
+		String query = "select a.dni, a.nombre, a.apellido, m.nombre from alumno_materia al join materia m on al.cod_mat = m.cod_mat join alumno a on al.dni_al = a.dni";
+		try(PreparedStatement ps = conn.prepareStatement(txt)){
+			ResultSet rs = ps.executeQuery();
+			if(rs.next()) {
+				txt = "ALUMNO: "+rs.getInt(1)+" "+rs.getString(2)+" "+rs.getString(3);
+				txt += "\nINSCRIPTO EN MATERIAS: \n";
+				txt += ""+rs.getString(4);
+				
+			}
+		}catch(SQLException ex) {
+			ex.printStackTrace();
+		}
+		
+		return txt;
+	}
+	
+	
+	public Boolean deleteRowById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

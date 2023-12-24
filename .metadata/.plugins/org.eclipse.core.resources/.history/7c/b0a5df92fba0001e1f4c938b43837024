@@ -1,0 +1,7 @@
+package ar.com.sistema.secundario.dao.impl;
+
+import ar.com.sistema.secundario.dao.AlumnoMateriaDAO;
+
+public class AlumnoMateriaDAOImpl implements AlumnoMateriaDAO{
+
+}

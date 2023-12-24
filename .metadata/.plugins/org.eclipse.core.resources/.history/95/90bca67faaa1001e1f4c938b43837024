@@ -1,0 +1,10 @@
+package ar.com.sistema.secundario.exceptions;
+
+public class StudentNotExists extends RuntimeException{
+	public StudentNotExists(String msj) {
+		super(msj);
+	}
+	public StudentNotExists() {
+	
+	}
+}

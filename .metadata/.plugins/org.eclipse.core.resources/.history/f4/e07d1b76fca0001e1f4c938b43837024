@@ -1,0 +1,7 @@
+package ar.com.sistema.secundario.dao;
+
+import ar.com.sistema.secundario.dao.impl.AlumnoDAOImpl;
+
+public interface DAOManager {
+	public AlumnoDAOImpl getAlumnoDAO();
+}

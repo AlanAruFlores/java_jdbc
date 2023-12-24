@@ -1,0 +1,40 @@
+package ar.com.sistema.secundario.dao.impl;
+
+import java.util.List;
+
+import ar.com.sistema.secundario.dao.NotaDAO;
+import ar.com.sistema.secundario.modelo.Nota;
+
+public class NotaDAOImpl implements NotaDAO{
+
+	@Override
+	public Boolean insertRow(Nota object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Nota> getAllRows() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Nota getRowSpecificById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean updateRowById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean deleteRowById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

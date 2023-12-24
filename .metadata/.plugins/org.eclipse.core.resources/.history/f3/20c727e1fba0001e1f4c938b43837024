@@ -1,0 +1,40 @@
+package ar.com.sistema.secundario.dao.impl;
+
+import java.util.List;
+
+import ar.com.sistema.secundario.dao.AlumnoMateriaDAO;
+import ar.com.sistema.secundario.modelo.AlumnoMateria;
+
+public class AlumnoMateriaDAOImpl implements AlumnoMateriaDAO{
+
+	@Override
+	public Boolean insertRow(AlumnoMateria object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<AlumnoMateria> getAllRows() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public AlumnoMateria getRowSpecificById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean updateRowById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean deleteRowById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,24 @@
+package ar.com.sistema.secundario.test;
+
+import java.sql.SQLException;
+
+import org.junit.Test;
+
+import ar.com.sistema.secundario.dao.AlumnoMateriaDAO;
+import ar.com.sistema.secundario.dao.DAOManager;
+import ar.com.sistema.secundario.dao.impl.DAOManagerImpl;
+import ar.com.sistema.secundario.modelo.AlumnoMateria;
+
+public class TestAlumnoMateriaDAO {
+
+	@Test
+	public void testWeCanInsertAStudentSubject() throws SQLException{
+		DAOManager manager = new DAOManagerImpl();
+		AlumnoMateriaDAO dao = manager.getAlumnoMateriaDAO();
+		
+		AlumnoMateria studentSubject = new AlumnoMateria(4433333,2222); 
+		
+		
+	}
+
+}

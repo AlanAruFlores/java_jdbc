@@ -1,0 +1,40 @@
+package ar.com.sistema.secundario.dao.impl;
+
+import java.util.List;
+
+import ar.com.sistema.secundario.dao.ProfesorDAO;
+import ar.com.sistema.secundario.modelo.Profesor;
+
+public class ProfesorDAOImpl implements ProfesorDAO {
+
+	@Override
+	public Boolean insertRow(Profesor object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Profesor> getAllRows() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Profesor getRowSpecificById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean updateRowById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean deleteRowById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

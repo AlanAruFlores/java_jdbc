@@ -1,0 +1,51 @@
+package ar.com.sistema.secundario.test;
+
+import static org.junit.Assert.assertTrue;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import org.junit.Test;
+
+import ar.com.sistema.secundario.dao.DAOManager;
+import ar.com.sistema.secundario.dao.ProfesorDAO;
+import ar.com.sistema.secundario.dao.impl.DAOManagerImpl;
+import ar.com.sistema.secundario.modelo.Profesor;
+
+public class TestProfesorDAOImpl {
+
+	@Test
+	public void testWeCanInsertANewTeacher() throws SQLException {
+		DAOManager manager = new DAOManagerImpl();
+		ProfesorDAO dao = manager.getProfesorDAOImpl();
+
+		Profesor teacherToInsert = new Profesor(1235,"Pedro", "Smith");
+		assertTrue(dao.insertRow(teacherToInsert));
+		manager.closeConnection();
+		
+	}
+	
+	@Test
+	public void testWeCanGetAllTeachers() throws SQLException{
+		DAOManager manager = new DAOManagerImpl();
+		ProfesorDAO dao = manager.getProfesorDAOImpl();
+		
+		List<Profesor> teachers = dao.getAllRows();
+		for(Profesor t : teachers) 
+			System.out.println(t);
+		
+		manager.closeConnection();
+	}
+	
+	@Test 
+	public void testWeCanGetAnSpecificTeacherByDNI() throws SQLException{
+		DAOManager manager = new DAOManagerImpl();
+		ProfesorDAO dao = manager.getProfesorDAOImpl();
+		
+		Profesor teacher = dao.getRowSpecificById(1235);
+		
+		
+	}
+}
+
+

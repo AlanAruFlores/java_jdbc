@@ -1,0 +1,8 @@
+package ar.com.sistema.secundario.dao;
+
+import ar.com.sistema.secundario.modelo.AlumnoMateria;
+
+public interface AlumnoMateriaDAO{
+	public Boolean insertRow(AlumnoMateria object);
+	
+}

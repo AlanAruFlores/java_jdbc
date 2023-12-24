@@ -1,0 +1,4 @@
+package ar.com.sistema.secundario.dao;
+
+public interface AlumnoDAO implements DAO<Alumno>{
+}

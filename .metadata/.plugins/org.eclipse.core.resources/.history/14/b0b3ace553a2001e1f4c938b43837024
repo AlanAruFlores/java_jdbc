@@ -1,0 +1,21 @@
+package ar.com.sistema.secundario.test;
+
+import java.sql.SQLException;
+
+import org.junit.Test;
+
+import ar.com.sistema.secundario.dao.DAOManager;
+import ar.com.sistema.secundario.dao.impl.DAOManagerImpl;
+
+public class TestMateriaDAOImpl {
+
+	@Test
+	public void testWeCanInsertASubject() throws SQLException{
+		DAOManager manager = new DAOManagerImpl();
+		Materia materia =  new Materia(2222,"Matematica",1234);
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,50 @@
+package ar.com.sistema.secundario.interfaz;
+
+import java.util.Properties;
+import java.sql.*;
+public class Main {
+
+	
+	private static Properties getPropertiesOfDatabaseConnection() {
+		Properties propierties = new Properties();
+		propierties.setProperty("user", "root");
+		propierties.setProperty("password", "");
+		
+		return propierties;
+	}
+	
+	private static Connection getConnection() {
+		try(Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/sistema_secundario", getPropertiesOfDatabaseConnection())){
+			System.out.println("Conexion establecida");
+			if(!conn.isClosed())
+				return conn;
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+		}
+	}
+	
+	private static void closeConnection(Connection conn) {
+		try{
+			if(!conn.isClosed())
+				conn.close();
+			
+		}catch(SQLException ex) {
+			ex.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		//RECORREMOS LOS DRIVERS DE NUESTRO PROGRAMNA
+		DriverManager.drivers().forEach((x)->{
+			System.out.println(x.toString());
+		});
+		
+
+		
+	}
+	
+	
+	public static void showE
+}

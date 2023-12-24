@@ -1,0 +1,47 @@
+package ar.com.sistema.secundario.dao.impl;
+
+import java.sql.Connection;
+import java.util.List;
+
+import ar.com.sistema.secundario.dao.ProfesorDAO;
+import ar.com.sistema.secundario.modelo.Profesor;
+
+public final class ProfesorDAOImpl implements ProfesorDAO {
+	private Connection conn;
+	
+	public ProfesorDAOImpl (Connection conn) {
+		this.conn  = conn;
+	}
+	
+	@Override
+	public Boolean insertRow(Profesor object) {
+		String query = "INSERT INTO profesor (dni,nombre, apellido) VALUES (?,?,?)";
+		
+		return null;
+	}
+
+	@Override
+	public List<Profesor> getAllRows() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Profesor getRowSpecificById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean updateRowById(Profesor object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean deleteRowById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

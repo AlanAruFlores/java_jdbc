@@ -1,0 +1,7 @@
+package ar.com.sistema.secundario.dao.mysql;
+
+import ar.com.sistema.secundario.dao.AlumnoDAO;
+
+public final class MySQLAlumnoDAO implements AlumnoDAO{
+
+}

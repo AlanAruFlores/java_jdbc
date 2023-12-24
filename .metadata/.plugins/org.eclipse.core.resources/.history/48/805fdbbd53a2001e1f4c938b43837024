@@ -1,0 +1,16 @@
+package ar.com.sistema.secundario.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import ar.com.sistema.secundario.dao.impl.DAOManagerImpl;
+
+public class TestMateriaDAOImpl {
+
+	@Test
+	public void testWeCanInsertASubject() {
+		DAOManager manager = new DAOManagerImpl()
+	}
+
+}

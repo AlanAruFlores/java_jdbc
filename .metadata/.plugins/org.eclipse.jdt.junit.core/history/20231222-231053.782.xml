@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestAlumnoDAOImpl" project="JDBC_Sistema_Secundario" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="ar.com.sistema.secundario.test.TestAlumnoDAOImpl" time="0.399">
+    <testcase name="testWeCanInsertARow" classname="ar.com.sistema.secundario.test.TestAlumnoDAOImpl" time="0.31"/>
+    <testcase name="testThatAllowShowMeAllStudents" classname="ar.com.sistema.secundario.test.TestAlumnoDAOImpl" time="0.089"/>
+  </testsuite>
+</testrun>

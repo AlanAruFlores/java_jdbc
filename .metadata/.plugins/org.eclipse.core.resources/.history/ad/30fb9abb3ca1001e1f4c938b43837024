@@ -1,0 +1,62 @@
+package ar.com.sistema.secundario.test;
+
+import static org.junit.Assert.*;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import ar.com.sistema.secundario.dao.AlumnoDAO;
+import ar.com.sistema.secundario.dao.impl.AlumnoDAOImpl;
+import ar.com.sistema.secundario.dao.impl.DAOManagerImpl;
+import ar.com.sistema.secundario.modelo.Alumno;
+import ar.com.sistema.secundario.utils.Nivel;
+
+public class TestAlumnoDAOImpl {
+
+	@Before
+	public void cleaningTable() throws SQLException {
+		DAOManagerImpl manager = new DAOManagerImpl();
+		AlumnoDAOImpl dao = manager.getAlumnoDAO();
+		dao.deletingTable();
+		manager.closeConnection();
+	}
+	
+	
+	@Test
+	public void testWeCanInsertARow() throws SQLException {
+		DAOManagerImpl manager = new DAOManagerImpl();
+		AlumnoDAO dao = manager.getAlumnoDAO();
+		
+		//Data
+		Alumno student = new Alumno(2323444, "Ale", "Diaz", 18, Nivel.CUARTO);
+		assertNotNull(student);
+		assertTrue(dao.insertRow(student));
+		manager.closeConnection();
+		
+	}
+	
+	@Test
+	public void testThatAllowShowMeAllStudents() throws SQLException {
+		DAOManagerImpl manager = new DAOManagerImpl();
+		AlumnoDAO dao = manager.getAlumnoDAO();
+		List<Alumno> listStudents = dao.getAllRows();
+		assertNotNull(listStudents);
+		for(Alumno alum : listStudents)
+			System.out.println(alum.toString());
+		manager.closeConnection();
+
+	}
+	
+	@Test
+	public void testAllowMeToGetAStudentByDNI() throws SQLException {
+		DAOManagerImpl manager = new DAOManagerImpl();
+		AlumnoDAO dao = manager.getAlumnoDAO();
+		Alumno student = dao.getRowSpecificById(2323444);
+		assertNotNull(student);
+	}
+
+}

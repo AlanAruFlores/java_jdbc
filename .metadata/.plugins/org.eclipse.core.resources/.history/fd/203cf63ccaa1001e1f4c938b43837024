@@ -1,0 +1,52 @@
+package ar.com.sistema.secundario.dao.impl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
+
+import ar.com.sistema.secundario.dao.NotaDAO;
+import ar.com.sistema.secundario.modelo.Nota;
+
+public final class NotaDAOImpl implements NotaDAO{
+	private Connection conn;
+	public NotaDAOImpl (Connection conn) {
+		this.conn  = conn;
+	}
+	
+	@Override
+	public Boolean insertRow(Nota object) {
+		String query = "INSERT INTO nota (cod, calificacion, dni_al, dni_pr,cod_mat) VALUES (?,?,?,?,?)";
+		try(PreparedStatement ps = conn.prepareStatement(query)){
+			
+		}catch(SQLException ex) {
+			ex.printStackTrace()
+		}
+		return null;
+	}
+
+	@Override
+	public List<Nota> getAllRows() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Nota getRowSpecificById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean updateRowById(Nota object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean deleteRowById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,10 @@
+package ar.com.sistema.secundario.exceptions;
+
+public class EntityNotExistsException extends Exception{
+	public StudentNotExistsException(String msj) {
+		super(msj);
+	}
+	public StudentNotExistsException() {
+	
+	}
+}

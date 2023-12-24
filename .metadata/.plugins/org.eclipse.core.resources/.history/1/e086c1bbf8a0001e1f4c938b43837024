@@ -1,0 +1,10 @@
+package ar.com.sistema.secundario.dominio;
+
+public class Materia {
+	Integer codMateria;
+	String nombre;
+	Integer dniProfesor;
+	
+	
+	
+}

@@ -1,0 +1,14 @@
+package ar.com.sistema.secundario.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestProfesorDAOImpl {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

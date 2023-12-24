@@ -1,0 +1,20 @@
+package ar.com.sistema.secundario.interfaz;
+
+import java.sql.DriverManager;
+import java.sql.*;
+public class Main {
+
+	
+	private static Properties getPropertiesOfDatabaseConnection() {
+		Properties propierties = new Properties();
+		
+	}
+	public static void main(String[] args) {
+		
+		
+		//RECORREMOS LOS DRIVERS DE NUESTRO PROGRAMNA
+		DriverManager.drivers().forEach((x)->{
+			System.out.println(x.toString());
+		});
+	}
+}

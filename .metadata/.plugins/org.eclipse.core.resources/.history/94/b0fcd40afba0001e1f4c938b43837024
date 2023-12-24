@@ -1,0 +1,41 @@
+package ar.com.sistema.secundario.dao.mysql;
+
+import java.util.List;
+
+import ar.com.sistema.secundario.dao.AlumnoMateriaDAO;
+import ar.com.sistema.secundario.dao.MateriaDAO;
+import ar.com.sistema.secundario.modelo.Materia;
+
+public class MySQLMateriaDAO implements MateriaDAO{
+
+	@Override
+	public Boolean insertRow(Materia object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Materia> getAllRows() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Materia getRowSpecificById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean updateRowById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean deleteRowById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

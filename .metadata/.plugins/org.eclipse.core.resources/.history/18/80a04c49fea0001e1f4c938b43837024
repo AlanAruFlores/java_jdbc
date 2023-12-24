@@ -1,0 +1,17 @@
+package ar.com.sistema.secundario.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import ar.com.sistema.secundario.dao.impl.DAOManagerImpl;
+
+public class TestConnection {
+
+	@Test
+	public void testingTheConnectionToTheDatabase() {
+		DAOManagerImpl manager = DAOManagerImpl();
+		
+	}
+
+}

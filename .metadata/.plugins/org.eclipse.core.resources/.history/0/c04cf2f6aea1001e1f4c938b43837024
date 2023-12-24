@@ -1,0 +1,25 @@
+package ar.com.sistema.secundario.test;
+
+import java.sql.SQLException;
+
+import org.junit.Test;
+
+import ar.com.sistema.secundario.dao.DAOManager;
+import ar.com.sistema.secundario.dao.ProfesorDAO;
+import ar.com.sistema.secundario.dao.impl.DAOManagerImpl;
+import ar.com.sistema.secundario.modelo.Profesor;
+
+public class TestProfesorDAOImpl {
+
+	@Test
+	public void testWeCanInsertANewTeacher() throws SQLException {
+		DAOManager manager = new DAOManagerImpl();
+		ProfesorDAO dao = manager.getProfesorDAOImpl();
+
+		Profesor teacherToInsert = new Profesor(1234,"Karl", "Smith");
+		dao.insertRow(teacherToInsert);
+		
+		
+	}
+
+}

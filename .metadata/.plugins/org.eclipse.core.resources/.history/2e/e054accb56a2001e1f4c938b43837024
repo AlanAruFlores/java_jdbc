@@ -1,0 +1,38 @@
+package ar.com.sistema.secundario.test;
+
+import static org.junit.Assert.assertTrue;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import org.junit.Test;
+
+import ar.com.sistema.secundario.dao.DAOManager;
+import ar.com.sistema.secundario.dao.NotaDAO;
+import ar.com.sistema.secundario.dao.impl.DAOManagerImpl;
+import ar.com.sistema.secundario.modelo.Nota;
+
+public class TestNotaDAOImpl {
+
+	@Test
+	public void testWeCanInsertAMark() throws SQLException{
+		DAOManager manager = new DAOManagerImpl();
+		NotaDAO dao  = manager.getNotaDAOImpl();
+		
+		Nota mark = new Nota(1,10,4433333,1234,2222);
+		assertTrue(dao.insertRow(mark));
+		
+		manager.closeConnection();
+	}
+
+	@Test
+	public void testWeCanSeeAllMarks() throws SQLException{
+		DAOManager manager = new DAOManagerImpl();
+		NotaDAO dao  = manager.getNotaDAOImpl();
+		
+		List<Nota> listMarks = dao.getAllRows();
+		listMarks.forEach((m)->{
+			System.out.println(m);
+		});
+	}
+}

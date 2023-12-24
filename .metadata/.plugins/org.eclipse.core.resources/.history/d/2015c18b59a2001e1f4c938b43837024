@@ -1,0 +1,15 @@
+package ar.com.sistema.secundario.test;
+
+import org.junit.Test;
+
+import ar.com.sistema.secundario.dao.DAOManager;
+import ar.com.sistema.secundario.dao.impl.DAOManagerImpl;
+
+public class TestAlumnoMateriaDAO {
+
+	@Test
+	public void testWeCanInsertAStudentSubject() throws SQLException{
+		DAOManager manager = new DAOManagerImpl();
+	}
+
+}

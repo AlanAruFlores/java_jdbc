@@ -1,0 +1,13 @@
+package ar.com.sistema.secundario.interfaz;
+
+import java.sql.DriverManager;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		DriverManager.drivers().forEach((x)->{
+			System.out.println(x.toString());
+		});
+	}
+}

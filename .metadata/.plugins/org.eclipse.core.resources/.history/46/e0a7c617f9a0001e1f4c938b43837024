@@ -1,0 +1,10 @@
+package ar.com.sistema.secundario.dominio;
+
+public class Nota {
+	private Integer codigo;
+	private Integer nota;
+	private Integer dniAlumno;
+	private Integer dniProfesor;
+	private Integer codMateria;
+	
+}

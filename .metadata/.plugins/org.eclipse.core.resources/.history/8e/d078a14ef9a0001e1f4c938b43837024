@@ -1,0 +1,13 @@
+package ar.com.sistema.secundario.dominio;
+
+public class AlumnoMateria {
+	private Integer dniAlumno;
+	private Integer codMateria;
+	
+	public AlumnoMateria(Integer dniAlumno, Integer codMateria) {
+		this.dniAlumno = dniAlumno;
+		this.codMateria = codMateria;
+	}
+	
+	
+}

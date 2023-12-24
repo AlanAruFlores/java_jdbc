@@ -1,0 +1,9 @@
+package ar.com.sistema.secundario.dao;
+
+import ar.com.sistema.secundario.exceptions.EntityNotExistsException;
+import ar.com.sistema.secundario.modelo.Nota;
+
+public interface NotaDAO extends DAO<Nota>{
+	public String showInformationAboutTheMarksByStudentIdAndSubjectId(Integer idStudent, Integer idSubject) throws EntityNotExistsException;
+
+}

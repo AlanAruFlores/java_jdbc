@@ -1,0 +1,10 @@
+package ar.com.sistema.secundario.dao;
+import java.util.List;
+
+public interface DAO<T>{
+	public Boolean insertRow(T object);
+	public List<T> getAllRows();
+	public T getRowSpecificById(Integer id);
+	public Boolean updateRowById(Integer id):;
+	public Boolean deleteRowById(Integer id);
+}
