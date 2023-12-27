@@ -4,9 +4,10 @@ public class User {
 	private Integer id;
 	private String name;
 	private String password;
-	private Double money;
+	private Float money;
 	private Boolean isAdmin;
 	private String mail;
+	private Integer codSta;
 	
 	
 	public User(Integer id) {
@@ -14,7 +15,19 @@ public class User {
 		this.id = id;
 	}
 
-	public User(Integer id, String name, String password, Double money, Boolean isAdmin, String mail) {
+	
+	public User(String name, String password, Float money, Boolean isAdmin, String mail, Integer codSta) {
+		super();
+		this.name = name;
+		this.password = password;
+		this.money = money;
+		this.isAdmin = isAdmin;
+		this.mail = mail;
+		this.codSta = codSta;
+	}
+
+
+	public User(Integer id, String name, String password, Float money, Boolean isAdmin, String mail, Integer codSta) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -22,8 +35,17 @@ public class User {
 		this.money = money;
 		this.isAdmin = isAdmin;
 		this.mail = mail;
+		this.codSta = codSta;
 	}
 
+	public Integer getCodSta() {
+		return this.codSta;
+	}
+	
+	public void setCodSta(Integer newCod) {
+		this.codSta = newCod;
+	}
+	
 	public Integer getId() {
 		return id;
 	}
@@ -48,11 +70,11 @@ public class User {
 		this.password = password;
 	}
 
-	public Double getMoney() {
+	public Float getMoney() {
 		return money;
 	}
 
-	public void setMoney(Double money) {
+	public void setMoney(Float money) {
 		this.money = money;
 	}
 

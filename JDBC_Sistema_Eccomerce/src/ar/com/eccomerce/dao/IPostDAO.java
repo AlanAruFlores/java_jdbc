@@ -6,5 +6,5 @@ import ar.com.eccomerce.exceptions.ObjectSQLNotExists;
 import ar.com.eccomerce.model.Post;
 
 public interface IPostDAO extends DAO<Post>{
-	public String getDescriptionOfPostById() throws SQLException , ObjectSQLNotExists;
+	public String getDescriptionOfPostById(Post object) throws SQLException , ObjectSQLNotExists;
 }

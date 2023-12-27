@@ -11,8 +11,6 @@ public class Cart {
 			this.codCarr = id; 
 		else
 			this.userId = id;
-		
-		
 	}
 	
 	public Cart(Integer codCarr, Integer userId, Float totalPrice) {

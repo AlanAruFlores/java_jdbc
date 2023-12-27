@@ -8,8 +8,20 @@ public class Post {
 	private Integer authorId;
 	
 	
-	public Post(Integer authorId) {
+	public Post(Integer id, Boolean isByAutor) {
 		super();
+		if(isByAutor)
+			this.authorId = id;
+		else
+			this.codPost = id;
+	}
+
+
+	public Post(String title, String description, Float price, Integer authorId) {
+		super();
+		this.title = title;
+		this.description = description;
+		this.price = price;
 		this.authorId = authorId;
 	}
 

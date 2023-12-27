@@ -8,7 +8,10 @@ public class UserState {
 		super();
 		this.codSta = codSta;
 	}
-
+	
+	public UserState(String name) {
+		this.name = name;
+	}
 
 	public UserState(Integer codSta, String name) {
 		super();

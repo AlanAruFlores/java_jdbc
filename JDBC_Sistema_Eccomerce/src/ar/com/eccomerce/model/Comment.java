@@ -6,14 +6,24 @@ public class Comment {
 	private Integer userId;
 	private Integer codPost; 
 	
-	public Comment(Integer codPost) {
-		super();
-		this.codPost = codPost;
-	}
-
-	public Comment(Integer codCom, String message,Integer userId,Integer codPost) {
+	public Comment() {}
+	
+	public Comment(Integer codCom) {
 		super();
 		this.codCom = codCom;
+	}
+
+	public Comment(Integer codPost, String message, Integer userId) {
+		super();
+		this.codPost = codPost;
+		this.message = message;
+		this.userId = userId;
+	}
+
+	public Comment(Integer codCom, Integer codPost, String message,Integer userId) {
+		super();
+		this.codCom = codCom;
+		this.codPost = codPost;
 		this.message = message;
 		this.userId = userId;
 	}
