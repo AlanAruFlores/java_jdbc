@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestNotaDAOImpl.testWeCannotSeeHistorialOfAStudentById" project="JDBC_Sistema_Secundario" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testcase name="testWeCannotSeeHistorialOfAStudentById" classname="ar.com.sistema.secundario.test.TestNotaDAOImpl" time="0.223"/>
-</testrun>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestConnection" project="JDBC_Sistema_Secundario" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="ar.com.sistema.secundario.test.TestConnection" time="0.001">
-    <testcase name="testingTheConnectionToTheDatabase" classname="ar.com.sistema.secundario.test.TestConnection" time="0.001"/>
-  </testsuite>
-</testrun>

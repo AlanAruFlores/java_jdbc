@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dominio.AlumnoMateria"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dao.DAO"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.modelo.Materia"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.modelo.Profesor"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dao.NotaDAO"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dao.MateriaDAO"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dao.impl.AlumnoMateriaDAOImpl"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dao.impl.NotaDAOImpl"/>
+    <fullyQualifiedTypeName name="java.util.ArrayDeque"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dao.AlumnoDAO"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.modelo.Alumno"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.utils.Nivel"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dao.impl.AlumnoDAOImpl"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.exceptions.StudentNotExists"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.exceptions.StudentNotExistsException"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.test.TestProfesorDAOImpl"/>
+    <fullyQualifiedTypeName name="java.lang.Throwable"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.parser.Entity"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dao.ProfesorDAO"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dao.impl.ProfesorDAOImpl"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.modelo.Nota"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.modelo.AlumnoMateria"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dao.impl.MateriaDAOImpl"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dao.DAOManager"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.test.TestNotaDAOImpl"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dao.impl.DAOManagerImpl"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dao.AlumnoMateriaDAO"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="ar.com.sistema.secundario.exceptions.EntityNotExistsException"/>
 </qualifiedTypeNameHistroy>

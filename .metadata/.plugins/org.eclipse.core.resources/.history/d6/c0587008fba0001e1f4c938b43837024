@@ -1,8 +1,0 @@
-package ar.com.sistema.secundario.dao.mysql;
-
-import ar.com.sistema.secundario.dao.AlumnoMateriaDAO;
-import ar.com.sistema.secundario.dao.MateriaDAO;
-
-public class MySQLMateriaDAO implements MateriaDAO{
-
-}

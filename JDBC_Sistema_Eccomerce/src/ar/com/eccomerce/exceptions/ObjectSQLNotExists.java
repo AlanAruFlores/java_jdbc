@@ -1,0 +1,11 @@
+package ar.com.eccomerce.exceptions;
+
+import java.sql.SQLException;
+
+public class ObjectSQLNotExists extends SQLException {
+	private static final long serialVersionUID = -3275179808572874645L;
+
+	public ObjectSQLNotExists() {
+		super("SQL Object not exists in the database. Please check again");
+	}
+}
