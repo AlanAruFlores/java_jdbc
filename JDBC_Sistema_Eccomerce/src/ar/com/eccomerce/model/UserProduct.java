@@ -1,6 +1,7 @@
 package ar.com.eccomerce.model;
 
 public class UserProduct {
+	private Integer id;
 	private Integer userId;
 	private Integer codProd;
 	
@@ -15,6 +16,23 @@ public class UserProduct {
 		this.codProd = codProd;
 	}
 	
+	public UserProduct(Integer id, Integer userId, Integer codProd) {
+		super();
+		this.id = id;
+		this.userId = userId;
+		this.codProd = codProd;
+	}
+	
+	
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
 	public Integer getUserId() {
 		return userId;
 	}

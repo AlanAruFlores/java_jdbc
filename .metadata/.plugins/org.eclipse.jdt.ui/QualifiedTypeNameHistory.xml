@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.junit.Before"/>
-    <fullyQualifiedTypeName name="ar.com.sistema.secundario.dao.impl.AlumnoDAOImpl"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="ar.com.sistema.secundario.exceptions.StudentNotExists"/>
     <fullyQualifiedTypeName name="ar.com.sistema.secundario.exceptions.StudentNotExistsException"/>
@@ -20,15 +18,11 @@
     <fullyQualifiedTypeName name="ar.com.sistema.secundario.exceptions.EntityNotExistsException"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.dao.DAO"/>
     <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.DatabaseObjectDescription"/>
-    <fullyQualifiedTypeName name="ar.com.eccomerce.model.CartProduct"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.model.PostProduct"/>
-    <fullyQualifiedTypeName name="ar.com.eccomerce.dao.ICartDAO"/>
-    <fullyQualifiedTypeName name="ar.com.eccomerce.dao.ICartProductDAO"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.dao.IUserProductDAO"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.dao.implementation.CartDAOImpl"/>
-    <fullyQualifiedTypeName name="ar.com.eccomerce.dao.implementation.CartProductDAOImpl"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.dao.implementation.PostProductDAOImpl"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.dao.implementation.ReportDAOImpl"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.dao.implementation.UserProductDAOImpl"/>
@@ -45,7 +39,6 @@
     <fullyQualifiedTypeName name="ar.com.eccomerce.test.TestProductDAO"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.dao.IProductDAO"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.dao.implementation.ProductDAOImpl"/>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="java.io.ObjectStreamException"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.dao.implementation.PostDAOImpl"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.dao.IPostProductDAO"/>
@@ -54,10 +47,17 @@
     <fullyQualifiedTypeName name="ar.com.eccomerce.dao.implementation.CommentDAOImpl"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.dao.ICommentDAO"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.model.Comment"/>
+    <fullyQualifiedTypeName name="ar.com.eccomerce.dao.IReportDAO"/>
+    <fullyQualifiedTypeName name="ar.com.eccomerce.model.Cart"/>
+    <fullyQualifiedTypeName name="ar.com.eccomerce.dao.ICartDAO"/>
     <fullyQualifiedTypeName name="com.mysql.cj.x.protobuf.MysqlxPrepare.Prepare"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.dao.IDAOManager"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.dao.implementation.DAOManager"/>
-    <fullyQualifiedTypeName name="ar.com.eccomerce.dao.IReportDAO"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="ar.com.eccomerce.dao.ICartProductDAO"/>
+    <fullyQualifiedTypeName name="ar.com.eccomerce.dao.implementation.CartProductDAOImpl"/>
+    <fullyQualifiedTypeName name="javax.smartcardio.CardException"/>
+    <fullyQualifiedTypeName name="ar.com.eccomerce.model.CartProduct"/>
     <fullyQualifiedTypeName name="ar.com.eccomerce.exceptions.ObjectSQLNotExists"/>
 </qualifiedTypeNameHistroy>
