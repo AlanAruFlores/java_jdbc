@@ -13,6 +13,14 @@ public class Cart {
 			this.userId = id;
 	}
 	
+	
+	public Cart(Integer userId, Float totalPrice) {
+		super();
+		this.userId = userId;
+		this.totalPrice = totalPrice;
+	}
+
+
 	public Cart(Integer codCarr, Integer userId, Float totalPrice) {
 		super();
 		this.codCarr = codCarr;

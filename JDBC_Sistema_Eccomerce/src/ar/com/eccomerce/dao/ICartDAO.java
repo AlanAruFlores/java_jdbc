@@ -1,9 +1,12 @@
 package ar.com.eccomerce.dao;
 
+import java.sql.SQLException;
+
+import ar.com.eccomerce.exceptions.ObjectSQLNotExists;
 import ar.com.eccomerce.model.Cart;
-import ar.com.eccomerce.model.User;
 
 public interface ICartDAO {
-	public Cart getCartByUserId (User object);
-	public Float getTotalPriceOfCartByCartId(Cart cart);
+	public Boolean insert(Cart object) throws SQLException;
+	public Cart getCartByUserId (Cart object) throws SQLException, ObjectSQLNotExists;
+	public Float getTotalPriceOfCartByCartId(Cart cart)throws SQLException, ObjectSQLNotExists;
 }
