@@ -17,6 +17,7 @@ public class UserDAOImpl implements IUserDAO{
 	private final String getByIdQuery = "select * from user where id = ?";
 	private final String updateQuery = "update user set name = ? , password = ? , mail=?, is_admin = ?, money = ?, cod_sta = ? where id = ?";
 	private final String deleteQuery = " delete from user where id = ?";
+	private final String getUserByNameAndPassQuery = "select * from user where name = ? and password = ?";
 	
 	private Connection conn;
 	
@@ -111,6 +112,27 @@ public class UserDAOImpl implements IUserDAO{
 		ps.close();
 		
 		return true;
+	}
+
+
+	@Override
+	public User getUserByNameAndPassword(User object) throws SQLException, ObjectSQLNotExists{
+		PreparedStatement ps = conn.prepareStatement(getUserByNameAndPassQuery);
+		ps.setString(1, object.getName());
+		ps.setString(2, object.getPassword());
+		
+		ResultSet rs = ps.executeQuery();
+		
+		if(!rs.next()) {
+			rs.close();
+			ps.close();
+			throw new ObjectSQLNotExists();
+		}
+		
+		User user = new User(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getFloat(6),rs.getInt(4) == 1 ? true : false,rs.getString(5),rs.getInt(7));
+		rs.close();
+		ps.close();
+		return user;
 	}
 
 }

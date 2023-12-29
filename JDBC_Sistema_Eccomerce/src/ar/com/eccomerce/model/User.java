@@ -10,6 +10,8 @@ public class User {
 	private Integer codSta;
 	
 	
+	public User() {}
+	
 	public User(Integer id) {
 		super();
 		this.id = id;
